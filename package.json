@@ -1,0 +1,23 @@
+{
+  "name": "mercadoliebrevc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicceledon/mercadoLiebreVC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicceledon/mercadoLiebreVC/issues"
+  },
+  "homepage": "https://github.com/vicceledon/mercadoLiebreVC#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
