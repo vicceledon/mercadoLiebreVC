@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+html {
+  max-width: 360px;
+}
+header {
+  background-color: var(--amarillo);
+  height: 330px;
+}
+.cabecera {
+  padding: 20px 20px 20px 20px;
+}
+.barra {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--gris-oscuro);
+  width: 200px;
+  margin-left: 20px;
+  margin-bottom: 2px;
+  padding: 2px;
+  color: var(--gris-oscuro);
+  background-color: white;
+}
+.buscar {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--gris-oscuro);
+  background-color: var(--gris-claro);
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.comprar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  color: black;
+}
+nav ul {
+  list-style: none;
+  margin: 10px 0px;
+  padding: 0px;
+}
+nav ul li {
+  margin: 2px 0px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 0px 4px 0px 0px;
+}
+.burger-menu {
+  background-color: var(--celeste);
+  border-style: solid;
+  border-color: var(--celeste);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  padding: 5px 5px 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.precios {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.descuentos {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  text-align: center;
+  color: var(--gris-oscuro);
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0px;
+}
+.texto-pie {
+  padding: 40px 0px 40px 0px;
+}
+.texto-pie p {
+  margin: 0px 0px 0px 0px;
+}
+.iconos-pie {
+  color: var(--celeste);
+  font-size: 2em;
+  margin: 0px 0px 10px 0px;
+}
