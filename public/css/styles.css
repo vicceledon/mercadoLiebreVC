@@ -99,18 +99,24 @@ nav ul li a {
 
 .mosaicos-main {
   background-color: white;
-  margin: 5%;
+  margin: 5px;
   /*  width: 86%;*/
 }
 .mosaicos-main img {
   width: 100%;
+}
+.mosaicos-main div {
+  border-top: 1px solid var(--gris-claro);
+  padding: 15px;
 }
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   text-align: center;
 }
-
+.envios {
+  font-size: 24px;
+}
 .precios {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -148,7 +154,7 @@ h4 {
 }
 
 /*pantallas mayores a 480px*/
-@media (min-width: 361px) {
+@media (min-width: 480px) {
   .menu {
     display: block;
   }
