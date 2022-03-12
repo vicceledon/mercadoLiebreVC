@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+/*definicion de varaibles de colores*/
 :root {
   --amarillo: #eac926;
   --azul: #03264c;
@@ -8,24 +8,39 @@
   --gris-claro: #ebebeb;
   --verde: #39b54a;
 }
-html {
-  max-width: 360px;
+/*normalizacion y definicion de tipo de caja*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/*definicion de color de fondo*/
+html {
+  /*max-width: 360px;*/
+  background-color: var(--gris-claro);
+}
+/*definicion de tipo y tamaño de letra*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+/*cabecera*/
 header {
   background-color: var(--amarillo);
-  height: 330px;
+  height: auto;
 }
 .cabecera {
-  padding: 20px 20px 20px 20px;
+  width: 100%;
+  padding: 5%;
+  text-align: center;
 }
 .barra {
   border-style: solid;
   border-width: 1px;
   border-color: var(--gris-oscuro);
-  width: 200px;
-  margin-left: 20px;
-  margin-bottom: 2px;
-  padding: 2px;
+  width: 70%;
+  margin: auto;
+  padding: 1%;
   color: var(--gris-oscuro);
   background-color: white;
 }
@@ -34,52 +49,66 @@ header {
   border-width: 1px;
   border-color: var(--gris-oscuro);
   background-color: var(--gris-claro);
-  width: 12px;
-  height: 12px;
-  padding: 4px;
-  margin-left: 20px;
-  margin-bottom: 5px;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  margin-left: 15%;
+  margin-bottom: 5%;
 }
 .comprar {
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
+  margin: auto;
+  text-align: center;
+  width: 70%;
   color: black;
 }
 nav ul {
   list-style: none;
-  margin: 10px 0px;
-  padding: 0px;
+  margin: 3% 0%;
+  padding: 0;
 }
 nav ul li {
-  margin: 2px 0px;
+  margin: 1% 0%;
 }
 nav ul li a {
   text-decoration: none;
   color: black;
-  margin: 0px 4px 0px 0px;
+  margin: 0% 2% 0% 0%;
+}
+.menu {
+  display: none;
 }
 .burger-menu {
   background-color: var(--celeste);
   border-style: solid;
   border-color: var(--celeste);
   border-radius: 5px;
-  width: 20px;
-  height: 20px;
-  padding: 5px 5px 5px 5px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  margin: 5% auto;
+  text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 26px;
+}
+.cabecera img {
+  width: 70%;
+}
+.banner img {
+  width: 100%;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
+.mosaicos-main {
+  background-color: white;
+  margin: 5%;
+  /*  width: 86%;*/
+}
+.mosaicos-main img {
+  width: 100%;
 }
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
+  text-align: center;
 }
 
 .precios {
@@ -94,11 +123,10 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-
+/*pie de pagina*/
 footer {
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
+  margin: auto;
+  width: 70%;
   text-align: center;
   color: var(--gris-oscuro);
 }
@@ -108,13 +136,25 @@ h4 {
   margin: 0px;
 }
 .texto-pie {
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0px;
 }
 .texto-pie p {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
 }
 .iconos-pie {
   color: var(--celeste);
   font-size: 2em;
   margin: 0px 0px 10px 0px;
 }
+
+/*pantallas mayores a 480px*/
+@media (min-width: 361px) {
+  .menu {
+    display: block;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+
+/*pantallas mayores a 640px*/
