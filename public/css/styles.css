@@ -33,6 +33,10 @@ header {
   width: 100%;
   padding: 5%;
   text-align: center;
+  max-width: 361px;
+}
+.formulario {
+  max-width: 361px;
 }
 .barra {
   border-style: solid;
@@ -99,7 +103,7 @@ nav ul li a {
 
 .mosaicos-main {
   background-color: white;
-  margin: 5px;
+  margin: 15px;
   /*  width: 86%;*/
 }
 .mosaicos-main img {
@@ -116,6 +120,12 @@ h1 {
 }
 .envios {
   font-size: 24px;
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 6px 4px 4px 4px;
 }
 .precios {
   font-family: "Roboto", sans-serif;
@@ -124,10 +134,12 @@ h1 {
 .descuentos {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  color: var(--verde);
 }
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  display: none;
 }
 /*pie de pagina*/
 footer {
@@ -153,14 +165,21 @@ h4 {
   margin: 0px 0px 10px 0px;
 }
 
-/*pantallas mayores a 480px*/
-@media (min-width: 480px) {
+/*pantallas mayores a 361px*/
+@media (min-width: 361px) {
   .menu {
     display: block;
   }
   .burger-menu {
     display: none;
   }
+  .mosaicos-main h3 {
+    display: block;
+  }
+  .mosaicos-main {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 }
-
-/*pantallas mayores a 640px*/
+/*pantallas mayores a 769px*/
+@media (min-width: 769px) {
+}
