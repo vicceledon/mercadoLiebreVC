@@ -34,20 +34,20 @@ header {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: space-between;
 }
 .cabecera {
-  width: 50%;
+  width: 49%;
   text-align: center;
 }
 .formulario {
-  width: 50%;
+  width: 49%;
 }
 .barra {
   border-style: solid;
   border-radius: 4px;
   border-width: 1px;
   border-color: var(--gris-oscuro);
-  /*  width: 70%;*/
   margin: auto;
   padding: 5px;
   color: var(--gris-oscuro);
@@ -73,7 +73,6 @@ header {
 .comprar {
   margin: 20px auto;
   text-align: center;
-  /*width: 70%;*/
   color: black;
 }
 nav ul {
@@ -106,7 +105,7 @@ nav ul li a {
   font-size: 26px;
 }
 .cabecera img {
-  width: 70%;
+  width: 100%;
 }
 
 .banner img {
@@ -117,7 +116,6 @@ nav ul li a {
   background-color: white;
   margin: 15px;
   width: 100%;
-  /*  width: 86%;*/
 }
 .mosaicos-main img {
   width: 100%;
@@ -129,17 +127,10 @@ nav ul li a {
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  text-align: center;
 }
 .envios {
   color: var(--verde);
   font-size: 16px;
-  /*  border: 1px solid var(--verde);
-  background-color: #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 5px;*/
 }
 .precios {
   font-family: "Roboto", sans-serif;
@@ -206,11 +197,50 @@ main section article i {
 }
 .dispositivo h1 {
   width: 100%;
+  padding: 0px 25px;
 }
 /*pantallas mayores a 361px*/
 @media (min-width: 361px) {
+  .cabecera-ppal {
+    align-items: center;
+  }
+  .cabecera {
+    width: 33%;
+  }
+  .formulario {
+    width: 33%;
+  }
+  .comprar {
+    width: 33%;
+  }
+  .formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .barra {
+    flex-grow: 1;
+    padding: 2px;
+    margin: auto 5px;
+  }
+  .buscar {
+    position: unset;
+    margin: auto;
+  }
   .menu {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu ul li {
+    width: auto;
+    margin: auto 4px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: clip;
   }
   .burger-menu {
     display: none;
@@ -230,5 +260,8 @@ main section article i {
 @media (min-width: 769px) {
   .mosaicos-main {
     width: 20%;
+  }
+  .menu ul li {
+    margin: auto 10px;
   }
 }
