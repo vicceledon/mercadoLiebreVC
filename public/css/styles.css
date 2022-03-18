@@ -199,6 +199,27 @@ main section article i {
   width: 100%;
   padding: 0px 25px;
 }
+.formulario-usuario {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+.formulario-usuario div {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5px;
+}
+.formulario-usuario div input {
+  flex-grow: 1;
+  max-width: 250px;
+}
+.botones {
+  width: 50px;
+  margin: 0px 5px;
+}
 /*pantallas mayores a 361px*/
 @media (min-width: 361px) {
   .cabecera-ppal {
@@ -253,6 +274,9 @@ main section article i {
   }
   .mosaicos-main {
     width: 40%;
+  }
+  .formulario-usuario div {
+    flex-direction: row;
   }
 }
 
