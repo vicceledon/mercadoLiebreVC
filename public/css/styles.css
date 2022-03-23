@@ -132,18 +132,26 @@ h1 {
   color: var(--verde);
   font-size: 16px;
 }
+.envios i {
+  transition: transform 0.5s;
+}
+.envios i:hover {
+  transform: rotate(-90deg);
+}
 .precios {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   width: 30%;
+  text-align: left;
 }
 .descuentos {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: var(--verde);
   width: 70%;
+  text-align: right;
 }
-h3 {
+.descripcion {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   display: none;
@@ -219,7 +227,12 @@ main section article i {
 .botones {
   width: 50px;
   margin: 0px 5px;
+  transition: background-color 0.5s;
 }
+.botones:hover {
+  background-color: #0022aa;
+}
+
 /*pantallas mayores a 361px*/
 @media (min-width: 361px) {
   .cabecera-ppal {
@@ -266,10 +279,10 @@ main section article i {
   .burger-menu {
     display: none;
   }
-  .mosaicos-main h3 {
-    display: block;
-  }
   .mosaicos-main {
+    transition: box-shadow 0.5s;
+  }
+  .mosaicos-main:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
   .mosaicos-main {
@@ -277,6 +290,16 @@ main section article i {
   }
   .formulario-usuario div {
     flex-direction: row;
+  }
+  .descripcion {
+    display: block;
+  }
+  .detalle-articulos .descripcion {
+    visibility: hidden;
+    transition: visibility 0.5s;
+  }
+  .detalle-articulos:hover .descripcion {
+    visibility: visible;
   }
 }
 
@@ -287,5 +310,18 @@ main section article i {
   }
   .menu ul li {
     margin: auto 10px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer section {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer section article {
+    width: 30%;
+  }
+  .derechos {
+    text-align: justify;
   }
 }
