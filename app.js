@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 4001;
 app.use(express.static(path.join(ruta, "/public")));
 
 app.listen(PORT, () => {
-  console.log("Servidor corriendo en el puerto 3000");
+  console.log("Servidor corriendo en el puerto " + PORT);
 });
 
 app.get("/", (req, res) => {
