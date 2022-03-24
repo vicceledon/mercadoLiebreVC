@@ -55,12 +55,14 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
+  width: 100%;
 }
 .buscar {
-  border-style: solid;
+  /*border-style: solid;
   border-width: 1px;
   border-color: var(--gris-oscuro);
-  background-color: var(--gris-claro);
+  background-color: var(--gris-claro);*/
+  background-color: white;
   width: 20px;
   height: 20px;
   padding: 3px;
@@ -69,6 +71,7 @@ header {
   position: absolute;
   top: 3px;
   right: 1px;
+  border: none;
 }
 .comprar {
   margin: 20px auto;
@@ -142,14 +145,16 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   width: 30%;
-  text-align: left;
+  text-align: left; /*para evitar superposicion de texto*/
+  min-width: 80px; /*para evitar superposicion de texto*/
 }
 .descuentos {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: var(--verde);
-  width: 70%;
-  text-align: right;
+  max-width: 70%; /*para evitar superposicion de texto*/
+  text-align: left; /*para evitar superposicion de texto*/
+  min-width: 75px; /*para evitar superposicion de texto*/
 }
 .descripcion {
   font-family: "Roboto", sans-serif;
@@ -214,7 +219,7 @@ main section article i {
 }
 .formulario-usuario div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: normal;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
@@ -223,10 +228,21 @@ main section article i {
 .formulario-usuario div input {
   flex-grow: 1;
   max-width: 250px;
+  padding: 2px;
+  border: 1px solid var(--gris-oscuro);
+  border-radius: 4px;
 }
+.etiquetas {
+  min-width: 120px;
+}
+.todos-botones {
+  min-width: 200px;
+  max-width: 300px;
+}
+
 .botones {
-  width: 50px;
-  margin: 0px 5px;
+  width: 100px;
+  margin: 5px;
   transition: background-color 0.5s;
 }
 .botones:hover {
@@ -260,6 +276,9 @@ main section article i {
   .buscar {
     position: unset;
     margin: auto;
+    border: 1px var(--gris-oscuro) solid;
+    background-color: var(--gris-claro);
+    border-radius: 4px;
   }
   .menu {
     display: flex;
@@ -291,6 +310,11 @@ main section article i {
   .formulario-usuario div {
     flex-direction: row;
   }
+
+  .formulario-usuario div div {
+    max-width: 370px;
+  }
+
   .descripcion {
     display: block;
   }
@@ -323,5 +347,9 @@ main section article i {
   }
   .derechos {
     text-align: justify;
+  }
+  body {
+    max-width: 1200px;
+    margin: auto;
   }
 }

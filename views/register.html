@@ -25,10 +25,18 @@
             alt="logo de mercado liebre"
           />
         </div>
-        <div class="formulario" action="#" method="GET">
-          <div class="barra">Buscar productos, marcas y más</div>
-          <div class="buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
+        <form action="#" method="GET" class="formulario">
+          <input
+            type="text"
+            id="busqueda"
+            name="busqueda"
+            placeholder="Buscar productos, marcas y más"
+            class="barra"
+          /><!--Buscar productos, marcas y más</div>-->
+          <button type="submit" class="buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
         <div class="comprar">
           <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
           tarjetas de crédito
@@ -67,7 +75,7 @@
       <!--Formulario de registro-->
       <form action="/crear-registro" method="POST" class="formulario-usuario">
         <div>
-          <label for="nombre">Nombre y Apellido: </label>
+          <label class="etiquetas" for="nombre">Nombre y Apellido: </label>
           <input
             type="text"
             id="nombre"
@@ -79,7 +87,7 @@
           />
         </div>
         <div>
-          <label for="usuario">Nombre de usuario: </label>
+          <label class="etiquetas" for="usuario">Nombre de usuario: </label>
           <input
             type="text"
             id="usuario"
@@ -91,7 +99,7 @@
           />
         </div>
         <div>
-          <label for="fecha">Fecha de Nacimiento: </label>
+          <label class="etiquetas" for="fecha">Fecha de Nacimiento: </label>
           <input
             type="date"
             id="fecha"
@@ -101,7 +109,7 @@
           />
         </div>
         <div>
-          <label for="domicilio">Domicilio: </label>
+          <label class="etiquetas" for="domicilio">Domicilio: </label>
           <input
             type="text"
             id="domicilio"
@@ -110,8 +118,10 @@
             pattern="[a-Z]{5,50}"
             title="Este campo debe contener caracteres alafanuméricos."
           />
+        </div>
+        <div>
+          <label class="etiquetas" for="perfil">Perfil de usuario: </label>
           <div>
-            <label for="perfil">Perfil de usuario: </label>
             <label for="perfil">Comprar</label>
             <input type="radio" id="perfil" name="perfil" value="Comprar" />
             <label for="perfil">Vender</label>
@@ -119,44 +129,53 @@
           </div>
         </div>
         <div>
-          <label for="categoria">Categorías de interés: </label>
-          <label for="categoria">Electro</label>
-          <input
-            type="checkbox"
-            id="categoria"
-            name="categoria"
-            value="Electro"
-          />
-          <label for="categoria">Moda</label>
-          <input type="checkbox" id="categoria" name="categoria" value="Moda" />
-          <label for="categoria">Hogar</label>
-          <input
-            type="checkbox"
-            id="categoria"
-            name="categoria"
-            value="Hogar"
-          />
-          <label for="categoria">Juguetería</label>
-          <input
-            type="checkbox"
-            id="categoria"
-            name="categoria"
-            value="Juguetería"
-          />
-          <label for="categoria">Vida Sana</label>
-          <input
-            type="checkbox"
-            id="categoria"
-            name="categoria"
-            value="Vida Sana"
-          />
+          <label class="etiquetas" for="categoria"
+            >Categorías de interés:
+          </label>
+          <div>
+            <label for="categoria">Electro</label>
+            <input
+              type="checkbox"
+              id="categoria"
+              name="categoria"
+              value="Electro"
+            />
+            <label for="categoria">Moda</label>
+            <input
+              type="checkbox"
+              id="categoria"
+              name="categoria"
+              value="Moda"
+            />
+            <label for="categoria">Hogar</label>
+            <input
+              type="checkbox"
+              id="categoria"
+              name="categoria"
+              value="Hogar"
+            />
+            <label for="categoria">Juguetería</label>
+            <input
+              type="checkbox"
+              id="categoria"
+              name="categoria"
+              value="Juguetería"
+            />
+            <label for="categoria">Vida Sana</label>
+            <input
+              type="checkbox"
+              id="categoria"
+              name="categoria"
+              value="Vida Sana"
+            />
+          </div>
         </div>
         <div>
-          <label for="foto">Foto de usuario: </label>
+          <label class="etiquetas" for="foto">Foto de usuario: </label>
           <input type="file" id="foto" name="foto" />
         </div>
         <div>
-          <label for="contrasena">Contraseña: </label>
+          <label class="etiquetas" for="contrasena">Contraseña: </label>
           <input
             type="password"
             id="contrasena"
@@ -168,7 +187,9 @@
           />
         </div>
         <div>
-          <label for="confirmar">Confirmar contraseña: </label>
+          <label class="etiquetas" for="confirmar"
+            >Confirmar contraseña:
+          </label>
           <input
             type="password"
             id="confirmar"
@@ -179,7 +200,7 @@
             required
           />
         </div>
-        <div>
+        <div class="todos-botones">
           <input type="submit" value="Enviar" class="botones" />
           <input type="reset" value="Borrar" class="botones" />
         </div>

@@ -25,10 +25,18 @@
             alt="logo de mercado liebre"
           />
         </div>
-        <div class="formulario" action="#" method="GET">
-          <div class="barra">Buscar productos, marcas y más</div>
-          <div class="buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
+        <form action="#" method="GET" class="formulario">
+          <input
+            type="text"
+            id="busqueda"
+            name="busqueda"
+            placeholder="Buscar productos, marcas y más"
+            class="barra"
+          /><!--Buscar productos, marcas y más</div>-->
+          <button type="submit" class="buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
         <div class="comprar">
           <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
           tarjetas de crédito
@@ -67,7 +75,7 @@
       <!--Formulario de login-->
       <form action="login" method="POST" class="formulario-usuario">
         <div>
-          <label for="usuario">Nombre de Usuario: </label>
+          <label class="etiquetas" for="usuario">Nombre de Usuario: </label>
           <input
             type="text"
             id="usuario"
@@ -78,7 +86,7 @@
           />
         </div>
         <div>
-          <label for="contrasena">Contraseña: </label>
+          <label class="etiquetas" for="contrasena">Contraseña: </label>
           <input
             type="password"
             id="contrasena"
@@ -88,7 +96,7 @@
             title="El nombre de usuario puede contener caracteres y números"
           />
         </div>
-        <div>
+        <div class="todos-botones">
           <input type="submit" value="Enviar" class="botones" />
         </div>
       </form>
